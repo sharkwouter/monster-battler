@@ -3,10 +3,10 @@ from flask import request
 from flask_api import FlaskAPI, status, exceptions
 
 #import models
-from battler.models import Player, Monster
+from server.models import Player, Monster
 
 #import helper
-from battler.helpers import listMonsters, createMonster
+from server.helpers import listMonsters, createMonster
 
 #Lists and other variables
 players = []

@@ -1,7 +1,7 @@
 import json
 
 def createMonster(number):
-	with open('battler/data/monsters.json','r') as f:
+	with open('server/data/monsters.json','r') as f:
 		data = json.load(f)
 	if data:
 		return data["monsters"][str(number)] 
@@ -9,7 +9,7 @@ def createMonster(number):
 		return None
 
 def listMonsters():
-	with open('battler/data/monsters.json','r') as f:
+	with open('server/data/monsters.json','r') as f:
 		data = json.load(f)
 	if data:
 		return data["monsters"]

@@ -3,19 +3,13 @@ from flask import request
 from flask_api import FlaskAPI, status, exceptions
 
 #import models
-from server.models import Player, Monster
+from server.models import Player, Monster, PlayerList
 
 #import helper
 from server.helpers import listMonsters, createMonster
 
 #Lists and other variables
-players = []
-
-def findPlayer(name):
-	for player in players:
-		if player.getName() == name:
-			return player
-	return None
+players = PlayerList()
 
 app = FlaskAPI(__name__)
 
@@ -29,7 +23,7 @@ def register():
 	if name == '':
 		return "missing name",status.HTTP_400_BAD_REQUEST
 	
-	players.append(Player(name))
+	players.addPlayer(Player(name))
 	return "success"
 
 app.run()

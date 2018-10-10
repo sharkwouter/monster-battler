@@ -8,6 +8,7 @@ This project is composed of server which hosts a RESTful API and a client which 
 
 ## The plan
 The interactions with the API should look something like this:
+
 ![activity diagram](/diagrams/gameflow.png)
 
 ### Typechart

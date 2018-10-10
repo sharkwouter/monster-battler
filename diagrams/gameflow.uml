@@ -1,0 +1,22 @@
+@startuml
+
+start
+
+:Viewing monsters;
+:Picking monsters;
+:Finding other player;
+repeat
+  :View enemy monster;
+  if (Switch monster?) then (no)
+    :View moves;
+    :Pick move;
+  else (yes)
+    :View monsters;
+    :Pick monster;
+  endif
+  :Wait for other player;
+repeat while (Player is out of monsters?) is (no)
+
+stop
+
+@enduml

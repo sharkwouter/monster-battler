@@ -1,0 +1,26 @@
+{
+	"monsters": {
+		"1": {
+			"name": "mushroom",
+			"types": ["plant", "earth"],
+			"baseStats": {
+				"health": 45,
+				"attack": 49,
+				"defense": 49,
+				"speed": 45
+			},
+			"height": 50
+		},
+		"2": {
+			"name": "bark",
+			"types": ["plant"],
+			"baseStats": {
+				"health": 45,
+				"attack": 49,
+				"defense": 49,
+				"speed": 45
+			},
+			"height": 350
+		}
+	}
+}
